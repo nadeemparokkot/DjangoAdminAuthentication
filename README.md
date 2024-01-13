@@ -6,7 +6,7 @@
 <a href="https://github.com/nadeemparokkot" alt="nadeem"><img src="https://img.shields.io/badge/Build by - Nadeem Parokkot-blue" /></a>
 
  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/language-python-blue?style=for-the-badge"></a>
- <a href="https://www.python.org/"><img src="https://img.shields.io/badge/framework-Django-green?style=for-the-badge"></a>
+ <a href="https://www.djangoproject.com/"><img src="https://img.shields.io/badge/framework-Django-green?style=for-the-badge"></a>
  
 
 # Python Django
