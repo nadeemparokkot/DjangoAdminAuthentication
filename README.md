@@ -43,9 +43,14 @@ Django is a python web framework that enable rapid development of secure and mai
 - it use django template language DTL.eg: tags,variable,filter
 
 ## Now we diving into each project in deeply
-## Table of Contents
-- django1_BasicCrudOperations
-- django2_LoginHomeAuthentication_using_session_UsingUserModel
-- django3_LoginHomeAuthentication_using_inbuildLoginLogout_UsingUserModelogin_inbuild
-- django4_SignupLoginAuthenticationUsingOwnModel
-- django_5_LoginSignupHomeAdminAuthenticationUsingUserModel
+### Table of Contents
+- [django1_BasicCrudOperations ](#django1) 
+- [django2_LoginHomeAuthentication_using_session_UsingUserModel](#django2)
+- [django3_LoginHomeAuthentication_using_inbuildLoginLogout_UsingUserModelogin_inbuild](#django3)
+- [django4_SignupLoginAuthenticationUsingOwnModel](#django4)
+- [django_5_LoginSignupHomeAdminAuthenticationUsingUserModel](#django5)
+### django1
+### django2
+### django3
+### django4
+### django5
