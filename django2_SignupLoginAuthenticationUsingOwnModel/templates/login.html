@@ -1,0 +1,33 @@
+<ul>
+    <li><a href="{% url 'savedata'%}">Data</a></li>
+    <li><a href="{% url 'home'%}">Home</a></li>
+</ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary"><a style="color: white;">Login</a></button>
+            <br><br>
+            <a href="{% url 'signup_path' %}" style="color: rgb(69, 69, 139);">
+                <label>New User? Sign Up</label>
+            </a>
+        </form>
+    </div>
+</body>
+</html>
