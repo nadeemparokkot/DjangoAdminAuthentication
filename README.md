@@ -14,9 +14,37 @@ Django is a python web framework that enable rapid development of secure and mai
 
 ## features
 💡 Django makes it easier to build better web apps more quickly and with less code
+
 💡 its free and open source 
+
 💡 Django already create some importent essential tools
-     -database
-     -authentication system
-     -admin panel
-     
+
+- ✨ database
+- 📦 authentication system
+- 🌐 admin panel
+## Requirments
+1. Python
+2. html
+3. css
+## What is MVT architecture
+- The MVT is Model View and Template it is a software design pattern
+- Django follow the MVT design pattern
+### Model
+- Adjango model is a table in our database
+- The model is responsiblef for representing and managing the data in your application
+- it is typically implemented using a database
+- We can handle this through django ORM feature
+### View 
+- Django views are python functions that takes http requests and return http response
+- view is responsible for rendering the user interface and handling user interactions
+### Template
+- Atemplate in Django is basically a html file
+- we connect response in the view functions into template
+- it use django template language DTL.eg: tags,variable,filter
+
+## Now we diving into each project in deeply
+## Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Contribution Guidelines](#contribution-guidelines)
+- [License](#license)
