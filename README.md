@@ -44,7 +44,7 @@ Django is a python web framework that enable rapid development of secure and mai
 
 ## Now we diving into each project in deeply
 ## Table of Contents
-- [Features](#django1_BasicCrudOperations)
-- [Getting Started](#getting-started)
-- [Contribution Guidelines](#contribution-guidelines)
-- [License](#license)
+- django1_BasicCrudOperations
+- django2_SignupLoginAuthenticationUsingOwnModel
+- django3_LoginHomeAuthentication_using_session_UsingUserModel
+- django4_LoginHomeAuthentication_using_inbuildLoginLogout_UsingUserModelogin_inbuild
