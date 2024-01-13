@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/122343207?v=4" type="image/webp" />
+    <title>Add User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body>
+    <section class="vh-100" >
+        <div class="container py-5 h-100" >
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong" >
+                        <div class="card-body p-5 text-center">
+                            <h3 class="mb-5" style="font-weight: 900">Add User</h3>
+                            {% if messages %} {% for message in messages %}
+                                <label style="color: red">{{ message }}</label>
+                            {% endfor %} {% endif %}
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <div class="form-outline mb-4">
+                                    <label style="float: left; margin: 10px 20px 0 20px" class="fw-bold">Username</label>
+                                    <input type="text" class="form-control form-control-lg" name="username" style="font-size: 14px"  required/>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label style="float: left; margin: 10px 20px 0 20px" class="fw-bold">Email</label>
+                                    <input type="email" class="form-control form-control-lg" name="email" style="font-size: 14px"  required/>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label style="float: left; margin: 10px 20px 0 20px" class="fw-bold">Password</label>
+                                    <input type="password" class="form-control form-control-lg" name="password" style="font-size: 14px" required/>
+                                </div>
+
+                                <button class="btn btn-lg btn-block" type="submit" style="background-color:  rgb(196, 196, 196); color: rgb(0, 0, 0)"> Save </button>
+                                <a href="/useradmin" style="display: block; text-decoration: none; margin-top: 15px; color: rgb(0, 0, 0); ">Close</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
