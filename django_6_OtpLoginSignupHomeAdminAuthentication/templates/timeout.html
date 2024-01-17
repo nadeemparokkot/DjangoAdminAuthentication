@@ -1,0 +1,35 @@
+<!-- timeout.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/122343207?v=4" type="image/webp" />
+    <title>Timeout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong">
+                        <div class="card-body p-5 text-center">
+                            <h3 class="mb-5" style="font-weight: 900">Timeout</h3>
+                            <p>Timeout! Resend OTP <a href="{% url 'resend_otp_path'%}">here</a>.</p>
+                            <h5>OR</h5>
+                            <a href="{% url 'signup_path' %}"><label>Signup</label></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
