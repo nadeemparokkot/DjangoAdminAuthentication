@@ -54,6 +54,8 @@ def print_signup(request):
                 password = make_password(password, salt=None, hasher="pbkdf2_sha256")
                 user = User(username=username, email=email, password=password)
                 user.save()
+                user = authenticate(request ,username=username, password=password2)
+                login(request, user)
                 #request.session['registration_form_data'] = form.cleaned_data
                 otp = random.randint(100000, 999999)
                 request.session['otp'] = str(otp)
@@ -83,7 +85,7 @@ def print_otp(request):
 
             if otp == request.session.get('otp') and timezone.now() <= otp_expiry_time:
                 # request.session.flush()
-                return redirect(print_login)
+                return redirect(print_home)
             else:
                 messages.error(request, 'Invalid or expired OTP')
                 
